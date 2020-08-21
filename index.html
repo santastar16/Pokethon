@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>My Pokemon Cards!</h1>
+    <p>Here are all of my Pokemon cards! Click on the card to reveal what the Pokemon says!</p>
+
+    <div class="pikachu_card">
+      <img id="pikachu-pokemon-card" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg" 
+      class="card" 
+      onclick="selectPikachu()"/>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Pok%C3%A9mon_Pikachu_art.png/220px-Pok%C3%A9mon_Pikachu_art.png" class="profile_pic"/>
+    </div>
+
+    <div class="charizard_card">
+      <img id="charizard-pokemon-card" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg" class="card" onclick="selectCharizard()"/>
+      <img src="https://static.pokemonpets.com/images/monsters-images-800-800/6-Charizard.png" class="profile_pic" />
+    </div>
+        
+    <div class="bulbasaur_card">
+      <img id="bulbasaur-pokemon-card" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg" class="card" onclick="selectBulbasaur()"/>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" class="profile_pic" />
+    </div>
+
+    <div class="blastoise_card">
+      <img id="blastoise-pokemon-card" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg" class="card" onclick="selectBlastoise()"/>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009_f2.png" class="profile_pic" />
+    </div>
+
+    <div class="lucario_card">
+      <img id="lucario-pokemon-card" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg" class="card" onclick="selectLucario()"/>
+      <img src="https://cdn.bulbagarden.net/upload/thumb/d/d7/448Lucario.png/1200px-448Lucario.png" class="profile_pic" /></div>
+    </div>
+    <script> 
+      function selectPikachu(){
+        pikachuCard = document.getElementById("pikachu-pokemon-card");
+        pikachuCard.style.opacity = 1.0;
+        alert("PIKA PIKA");
+      };
+
+      function selectCharizard(){
+        charizardCard = document.getElementById("charizard-pokemon-card");
+        charizardCard.style.opacity = 1.0;
+        alert("CHARIZARD I CHOOSE YOU");
+      };
+
+      function selectLucario(){
+        lucarioCard = document.getElementById("lucario-pokemon-card");
+        lucarioCard.style.opacity = 1.0;
+        alert("LUCARIO GO");
+      };
+
+      function selectBlastoise(){
+        blastoiseCard = document.getElementById("blastoise-pokemon-card");
+        blastoiseCard.style.opacity = 1.0;
+        alert("BLASSSSSTTTOIIISEEE");
+      };
+
+      function selectBulbasaur(){
+        bulbasaurCard = document.getElementById("bulbasaur-pokemon-card");
+        bulbasaurCard.style.opacity = 1.0;
+        alert("Bulba - SAUR");
+      };
+    </script>
+  </body>
+</html>
